@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Resume - Rakan Alshehri</title>
+  <style>
+    /* Reset */
+    * {
+      box-sizing: border-box;
+      margin: 0; padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    body {
+      background: #f9f9f9;
+      color: #333;
+      line-height: 1.6;
+      padding: 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    header h1 {
+      font-size: 2.8rem;
+      color: #007ACC;
+      margin-bottom: 5px;
+    }
+    header p.contact {
+      font-size: 1rem;
+      color: #555;
+    }
+    section {
+      background: white;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 7px rgba(0,0,0,0.1);
+    }
+    section h2 {
+      color: #007ACC;
+      margin-bottom: 15px;
+      border-bottom: 2px solid #007ACC;
+      padding-bottom: 5px;
+    }
+    ul {
+      list-style: inside disc;
+      margin-left: 15px;
+    }
+    .collapsible {
+      background-color: #007ACC;
+      color: white;
+      cursor: pointer;
+      padding: 10px 15px;
+      width: 100%;
+      border: none;
+      text-align: left;
+      font-size: 1rem;
+      border-radius: 5px;
+      margin-bottom: 10px;
+      user-select: none;
+      transition: background-color 0.3s ease;
+    }
+    .collapsible:hover {
+      background-color: #005f99;
+    }
+    .active, .collapsible:active {
+      background-color: #005f99;
+    }
+    .content {
+      padding: 0 15px 15px 15px;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.25s ease-out;
+      background: #f0f8ff;
+      border-radius: 0 0 8px 8px;
+      font-size: 0.95rem;
+      color: #444;
+    }
+    .content p {
+      padding: 8px 0;
+    }
+    .project {
+      margin-bottom: 15px;
+    }
+    .project-title {
+      font-weight: bold;
+      color: #007ACC;
+      cursor: pointer;
+      text-align: left;
+    }
+    .project-desc {
+      display: none;
+      margin-top: 5px;
+      padding-left: 10px;
+      font-size: 0.95rem;
+      color: #444;
+    }
+    .skills-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .skill-item {
+      background: #007ACC;
+      color: white;
+      padding: 5px 12px;
+      border-radius: 20px;
+      font-size: 0.9rem;
+    }
+    @media (max-width: 600px) {
+      body {
+        padding: 10px;
+      }
+      header h1 {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Rakan Alshehri</h1>
+    <p class="contact">iirakan0ksa@gmail.com | +966 550057959 | Taif, Saudi Arabia</p>
+  </header>
+
+  <section id="objective">
+    <h2>Career Objective</h2>
+    <p>
+      Computer Science graduate with Second Honors, motivated and skilled in software engineering, development, testing, and machine learning. Quick learner and effective collaborator in cross-functional teams, aiming to deliver technically precise, real-world solutions and foster continuous improvement.
+    </p>
+  </section>
+
+  <section id="experience">
+    <h2>Work Experience</h2>
+    <ul>
+      <li>
+        Academic Systems Support Intern - Deanship of Admission and Registration, Taif University (Jun 2023 - Aug 2023)<br />
+        Managed and updated academic data using internal systems and SQL databases.
+      </li>
+      <li>
+        Supported registration workflows and system tasks using Excel, Google Sheets, and data validation techniques.
+      </li>
+      <li>
+        Assisted in generating and automating academic reports to improve administrative efficiency.
+      </li>
+      <li>
+        Awarded a certificate of appreciation for professionalism and effective use of computing skills.
+      </li>
+    </ul>
+  </section>
+
+  <section id="education">
+    <h2>Education</h2>
+    <ul>
+      <li>Bachelor of Science (B.Sc) in Computer Science, Taif University (2019 - 2024) - GPA: 3.29/4</li>
+    </ul>
+  </section>
+
+  <section id="trainings">
+    <h2>Trainings / Certifications</h2>
+
+    <button class="collapsible">Data Fundamentals - IBM (May 2025)</button>
+    <div class="content">
+      <p>Data fundamentals course by IBM, virtual learning.</p>
+    </div>
+
+    <button class="collapsible">ISTQB Foundation Level - Udemy (May - Jun 2025)</button>
+    <div class="content">
+      <p>Software testing fundamentals certification via Udemy, virtual learning.</p>
+    </div>
+
+    <button class="collapsible">Fundamentals Of Artificial Intelligence - SDAIA (Nov 2024)</button>
+    <div class="content">
+      <p>Introduction to Artificial Intelligence course, virtual learning.</p>
+    </div>
+
+    <button class="collapsible">Big Data - Doroob (Nov 2024)</button>
+    <div class="content">
+      <p>Big Data course from Doroob platform, virtual learning.</p>
+    </div>
+
+    <button class="collapsible">Machine Learning - Doroob (Oct 2024)</button>
+    <div class="content">
+      <p>Machine Learning course from Doroob platform, virtual learning.</p>
+    </div>
+
+    <button class="collapsible">Web Application Development - Doroob (Sep 2024)</button>
+    <div class="content">
+      <p>Web application development course, virtual learning.</p>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="project">
+      <div class="project-title">Graduation Project: “Weselt” – School Pickup Web App (React)</div>
+      <div class="project-desc">
+        Developed a web application to facilitate student pickups by allowing guardians to connect with schools in real-time.
+      </div>
+    </div>
+    <div class="project">
+      <div class="project-title">Neural Networks Project - Employee Turnover Prediction (Python)</div>
+      <div class="project-desc">
+        Worked in a team to analyze employee turnover and built classification models to predict turnover rates and improve retention.
+      </div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills-list">
+      <span class="skill-item">JavaScript</span>
+      <span class="skill-item">HTML</span>
+      <span class="skill-item">CSS</span>
+      <span class="skill-item">Python</span>
+      <span class="skill-item">C#</span>
+      <span class="skill-item">Java</span>
+      <span class="skill-item">MySQL</span>
+      <span class="skill-item">Big Data Analytics</span>
+      <span class="skill-item">Machine Learning</span>
+      <span class="skill-item">MLOps</span>
+      <span class="skill-item">Software Testing</span>
+      <span class="skill-item">Cloud Computing</span>
+    </div>
+  </section>
+
+  <section id="activities">
+    <h2>Extra Curricular Activities</h2>
+    <ul>
+      <li>Completed the 10-Week Cybersecurity Professional Certificate (IBM SkillsBuild, Q2 2025) – Earned 7 digital badges</li>
+    </ul>
+  </section>
+
+  <section id="languages">
+    <h2>Languages</h2>
+    <ul>
+      <li>Arabic: Native</li>
+      <li>English: Professional (STEP Score: 77 – Feb 2025)</li>
+    </ul>
+  </section>
+
+  <script>
+    // JavaScript to toggle collapsible content
+    document.querySelectorAll(".collapsible").forEach(button => {
+      button.addEventListener("click", () => {
+        button.classList.toggle("active");
+        const content = button.nextElementSibling;
+        if (content.style.maxHeight) {
+          content.style.maxHeight = null;
+        } else {
+          content.style.maxHeight = content.scrollHeight + "px";
+        }
+      });
+    });
+
+    // JavaScript to toggle project descriptions
+    document.querySelectorAll(".project-title").forEach(title => {
+      title.addEventListener("click", () => {
+        const desc = title.nextElementSibling;
+        if (desc.style.display === "block") {
+          desc.style.display = "none";
+        } else {
+          desc.style.display = "block";
+        }
+      });
+    });
+  </script>
+</body>
+</html>
